@@ -1,0 +1,56 @@
+html {
+    font-family: Cambria;
+    background-color: #F5F5F5;
+}
+
+address {
+    font-family: 'Trebuchet MS';
+    margin-left: 3%;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    width: 80%;
+    height: 150px;
+    margin-left: 10%;
+}
+
+hr {
+    width: 80%;
+    margin-left: 10%;
+    border: solid #1px;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link {
+    color: #4400ff;
+}
+
+a:visited {
+    color: #ff0000;
+}
+
+a:active {
+    color: #c03e5f;
+}
+
+#menu {
+    text-align: center;
+}
+
+#cabecalho {
+    text-align: center;
+}
+
+#endereco {
+    width: 80%;
+    margin-left: 13%;
+}
