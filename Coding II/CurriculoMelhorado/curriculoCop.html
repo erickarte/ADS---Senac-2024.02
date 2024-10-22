@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Freelancer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <fieldset>
+                <legend>Formulário Freelancer</legend>
+
+                <!-- Nome -->
+                <div class="form-group">
+                    <label for="nome" class="required">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Insira seu nome" required>
+                </div>
+
+                <!-- Sobrenome -->
+                <div class="form-group">
+                    <label for="sobrenome" class="required">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Insira seu sobrenome" required>
+                </div>
+
+                <!-- Telefone -->
+                <div class="form-group">
+                    <label for="telefone" class="required">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required
+                        pattern="\(\d{2}\) \d{5}-\d{4}">
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-group">
+                    <label for="email" class="required">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail" required>
+                </div>
+
+                <!-- Mensagem -->
+                <div class="form-group">
+                    <label for="mensagem" class="required">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"
+                        required></textarea>
+                </div>
+
+                <!-- Língua -->
+                <div class="form-group">
+                    <label for="lingua">Língua</label>
+                    <select class="form-control" id="lingua">
+                        <option>Português (pt-br)</option>
+                        <option>Inglês</option>
+                    </select>
+                </div>
+
+                <!-- Protótipo -->
+                <div class="form-group">
+                    <label for="arquivo">Protótipo</label>
+                    <input type="file" class="form-control-file" id="arquivo" accept=".pdf, .doc, .docx, .jpeg, .png">
+                </div>
+
+                <!-- Linguagens Preferidas -->
+                <div class="form-group">
+                    <label for="linguagens">Linguagens que você prefere</label>
+                    <select multiple class="form-control" id="linguagens">
+                        <option>JavaScript</option>
+                        <option>TypeScript</option>
+                        <option>Python</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="form-group">
+                    <label for="bancoDados">Banco de Dados</label>
+                    <select class="form-control" id="bancoDados">
+                        <option>MySQL</option>
+                        <option>PostgreSQL</option>
+                    </select>
+                </div>
+                
+                <!-- Turno para Reuniões -->
+                <div class="form-group">
+                    <label for="turno" class="required">Turno para reuniões</label>
+                    <select multiple class="form-control" id="turno" required>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+
+                <!-- Horário Sugerido -->
+                <div class="form-group">
+                    <label for="horario">Horário Sugerido</label>
+                    <input type="time" class="form-control" id="horario">
+                </div>
+
+                <!-- Data Prevista de Entrega -->
+                <div class="form-group">
+                    <label for="dataEntrega" class="required">Data Prevista de Entrega</label>
+                    <input type="date" class="form-control" id="dataEntrega" required>
+                </div>
+
+                <!-- Botões -->
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <p class="text-right mt-3"><small>* Campos obrigatórios</small></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
