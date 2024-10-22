@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Curriculo Erick Lopes</title>
-    <style>
-        .required::after {
-            content: " *";
-            color: red;
-        }
-    </style>
+    <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário Curriculo Erick Lopes</title>
+<style>
+    .required::after {
+        content: " *";
+        color: red;
+    }
+</style>
 </head>
+
 <body>
 
-    <div class="container mt-5">
-        <form>
+    <div class="container mt-5" style="height: 100%;">
+        <form id="myForm" style="height: 100%;">
             <fieldset>
                 <legend>Formulário Freelancer</legend>
 
@@ -66,17 +67,28 @@
                 <div class="form-group">
                     <label for="arquivo">Protótipo:</label>
                     <input type="file" class="form-control-file" id="arquivo" accept=".pdf, .doc, .docx, .jpeg, .png">
+                    <!-- Protótipo -->
                 </div>
 
                 <!-- Linguagens Preferidas -->
                 <div class="form-group">
-                    <label for="linguagens">Linguagens de Preferencia:</label>
-                    <select multiple class="form-control" id="linguagens">
-                        <option>JavaScript</option>
-                        <option>TypeScript</option>
-                        <option>Python</option>
-                        <option>Outro</option>
-                    </select>
+                    <label for="linguagens">Linguagens de Preferência:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1">
+                        <label class="form-check-label" for="inlineCheckbox1">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="opcao2">
+                        <label class="form-check-label" for="inlineCheckbox2">TypeScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="opcao3">
+                        <label class="form-check-label" for="inlineCheckbox3">Python</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="opcao4">
+                        <label class="form-check-label" for="inlineCheckbox4">Outro</label>
+                    </div>
                 </div>
 
                 <!-- Banco de Dados -->
@@ -87,15 +99,22 @@
                         <option>PostgreSQL</option>
                     </select>
                 </div>
-                
+
                 <!-- Turno para Reuniões -->
                 <div class="form-group">
-                    <label for="turno" class="required">Turno para reuniões:</label>
-                    <select multiple class="form-control" id="turno" required>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
+                    <label for="turno">Turno para Reuniões:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="turnoManha" value="manha">
+                        <label class="form-check-label" for="turnoManha">Manhã</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="turnoTarde" value="tarde">
+                        <label class="form-check-label" for="turnoTarde">Tarde</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="turnoNoite" value="noite">
+                        <label class="form-check-label" for="turnoNoite">Noite</label>
+                    </div>
                 </div>
 
                 <!-- Horário Sugerido -->
@@ -117,6 +136,7 @@
             </fieldset>
         </form>
     </div>
-    
+
 </body>
+
 </html>

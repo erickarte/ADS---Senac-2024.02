@@ -1,30 +1,52 @@
-#cabecalho {
-    text-align: center;
-    color: #ffffff;
-    background-color: #000000;
-}
+body {
+        overflow-x: hidden;
+    }
 
-#navegacao{
-    background-color: #b7e1ff98;
-    width: 100%;
-}
-
-.row {
-    width: 100%;
-    height: 100%;
+    #cabecalho {
+        text-align: center;
+        color: #ffffff;
+        background-color: #000000;
+    }
     
-}
+    #navegacao {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #00000015;
+    }
+    
+    .row {
+        flex-grow: 1;
+    }
 
-iframe {
-    background-color: #e0dbdb;
-    height: 100%;
-    width: 100%;
-}
-
-footer {
-    text-align: center;
-    font-size: small;
-    font-family: 'Segoe UI';
-    color: #ffffff;
-    background-color: #000000;
-}
+    .full-height-row {
+        height: calc(100vh - 20px);
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .nav-link {
+        padding: 10px;
+        color: #007bff;
+    }
+    
+    .nav-link:hover {
+        background-color: #f8f9fa;
+        color: #f31303;
+    }
+    
+    iframe {
+        width: 100vh;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    
+    footer {
+       
+        color: #000000;
+        text-align: center;
+        width: 100%;
+        font-size: small;
+        font-family: 'Segoe UI';
+    }
+    
