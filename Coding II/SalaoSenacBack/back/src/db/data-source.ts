@@ -9,7 +9,7 @@ export const AppDataSource = new DataSource({
  username: config.USER,
  password: config.PASSWORD,
  database: config.DB,
- entities: ['src/model/*.ts'],
- synchronize: true,
+ entities: ['src/models/*.ts'],
+ synchronize: false,
  logging: false,
 })

@@ -3,7 +3,7 @@ export const config = {
     PORT: 3306,
     USER: "root",
     PASSWORD: "ErickLopes",
-    DB: "SalaoSenac",
+    DB: "salaosenacback",
     pool: {
     max: 5,
     min: 0,

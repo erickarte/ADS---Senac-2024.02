@@ -5,7 +5,8 @@ import { Cliente } from "../models/cliente";
 export default class ClienteController {
 
     async create(req: Request, res: Response) {
-        if (!req.body.nome || !req.body.email || !req.body.telefone) {
+       const {nome, email, telefone, dataAniversario} = req.body;
+        if (!req.body.nome || !req.body.email || !req.body.telefone || !req.body.dataAniversario) {
             res.status(400).send({
                 message: "Nome, email e telefone são obrigatórios!",
             });
